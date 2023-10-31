@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function return value
+        function sayHello(firstName, lastName) {
+            const say = `Hello ${firstName} ${lastName}`;
+            return `Hello ${say}`;
+        }
+
+        const result = sayHello("Ratuayu", "Nurfajar"); //yang terpenting harus buat variable untuk menangkap hasil return nya 
+        document.writeln(`<p>${result}</p>`);
+
+        //function return value lebih dari satu
+        function getFinalScore(value) {
+            if (value > 90) {
+                return "A";
+            } else if (value > 80) {
+                return "B";
+            } else if (value > 70) {
+                return "C";
+            } else {
+                return "D";
+            }
+        }
+
+        const final = getFinalScore(90);
+        document.writeln(final);
+
+        //menghentikan eksekusi dengan return
+        function contain(array, search) {
+            for (const element of array) {
+                if (element === search) {
+                    return true;
+                }
+            } 
+            return false;
+        }
+
+        const array = [1,3,5,7,9,11];
+        const search = 1;
+        const found = contain(array, search);
+        console.info(found)
+
+        function tambah(a, b) {
+            return a + b;
+        }
+
+        const hasil = tambah(1, 2)
+        document.writeln(hasil)
+
+    </script>
+</body>
+</html>

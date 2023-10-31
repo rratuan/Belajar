@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    //optional chaining(?) untuk mengamankan ketika kita ingin mengakses property sebuah object dari data nullish
+        const person = {};
+        let country = person?.address?.country;
+        document.writeln(`<p>${country}</p>`)
+    
+    //kejadian ketika property pada object nya di definisikan atau tidak nullish
+        const student = {
+            address: {
+                city: "jakarta"
+            }
+        };
+        let city = student?.address?.city;
+        document.writeln(`<p>${city}</p>`)
+
+    </script>
+</body>
+</html>

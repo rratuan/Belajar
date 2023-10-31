@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //untuk membuat data generator(*)
+    //generator adalah data yang bisa di iterasi seperti array
+        function* createNames() {
+            yield "Ratuayu"; //yield untuk mengembalikan data tiap iterasi seperti return
+            yield "Nurfajar";
+            yield "Kamaludin";
+        }
+
+        const names = createNames();
+        for (const name of names) {
+            console.info(name);
+        }
+
+    //function generator komplex
+        function* buatGanjil(value) {
+            for (let i = 1; i <= value; i++) {
+                if (i % 2 === 1) {
+                    yield i;
+                }
+            }
+        }
+
+        const numbers = buatGanjil(10);
+        for (const number of numbers) {
+            console.info(number);
+        }
+
+    </script>
+</body>
+</html>

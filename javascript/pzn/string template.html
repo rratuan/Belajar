@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //menambahkan variable ke dalam string lagsung tanpa cara yang lama (harus menambahkan +)
+        const name = "Ratuayu Nurfajar Kamaludin"
+        const firstName = "Ratuayu";
+        const middleName = "Nurfajar";
+        const lastName = "Kamaludin";
+        const template = `Name : ${firstName} ${middleName} ${lastName}`;
+        console.info(template);
+
+        //expression di string template
+        const nilai = 80;
+
+        const template2 = `Name : ${name}, Lulus : ${nilai > 75}`;
+        console.info(template2);
+
+        //multiline string template
+
+        const multiline = `Nama saya Ratuayu Nurfajar,
+        Saya berstatus mahasiswa aktif Universitas Komputer Indonesia
+        Saya sedang belajar Bahasa Pemrograman Java Script
+        Mohon dukungannya.`;
+        document.writeln("<pre>")
+        document.writeln(multiline);
+        document.writeln("</pre>")
+
+    </script>
+</body>
+</html>

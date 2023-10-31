@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    //proses baca/seleksi dimulai dari kiri ke kanan
+    // operator or (||) akan memilih truty,dan ketika semuanya falsy maka akan diambil nilai yang paling kanan
+        console.info( "hello" || ""); //hello
+        console.info( "" || []); // []
+        console.info( "0" || "NOL"); // "NOL"
+
+    //operator and (&&) akan memilih falsy,dan ketika semuanya truty maka akan diambil milai yang paling kanan
+        console.info("heloo" && ""); // ""
+        console.info("" && {}); // ""
+        console.info("undefined" && "null"); //null
+
+    </script>
+</body>
+</html>

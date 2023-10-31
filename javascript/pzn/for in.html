@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //perulangan for untuk mengiterasi atau mengetahui atau mendapatkan seluruh data property di object atau index di array
+
+        //mengiterasi property di object
+        const person = {
+            firstName : "Ratuayu",
+            middleName : "Nurfajar",
+            lastName : "Kamaludin"
+        };
+
+        //mengiterasi index di array
+        for (const property in person) {
+            document.writeln(`<p>${property} : ${person[property]}</p>`);
+        }
+
+        const names = ["Ratuayu", "Nurfajar", "Kamaludin"];
+        for (const index in names) {
+            document.writeln(`<p>${index} : ${names[index]}</p>`);
+        }
+
+    </script>
+</body>
+</html>

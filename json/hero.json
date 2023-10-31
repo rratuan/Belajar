@@ -1,0 +1,24 @@
+[
+    {
+        "nama": "Ratu",
+        "level": 5,
+        "ranked": false,
+        "role": "fighter",
+        "rank": ["elite", "master", "epic"],
+        "lawankuat": {
+            "hero1": "Miya",
+            "hero2": "Balmond"
+        }
+    },
+    {
+        "nama": "Ratu",
+        "level": 5,
+        "ranked": false,
+        "role": "fighter",
+        "rank": ["elite", "master", "epic"],
+        "lawankuat": {
+            "hero1": "Miya",
+            "hero2": "Balmond"
+        }
+    }
+]

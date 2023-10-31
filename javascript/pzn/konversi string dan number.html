@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //konversi string to number dan sebaliknya
+        const value1 = "1"; //string
+        const value2 = 1; // number
+        const sum = value1 + value2;
+        document.writeln(`<p>${sum}</p>`) //hasilnya akan string; 11
+
+        const value3 = parseInt("1"); //konversi string ke integer number
+        const sum1 = value2 + value3;
+        document.writeln(`<p>${sum1}</p>`) //hasilnya akan number; 2
+
+        document.writeln(`<p>${parseInt("1.9")}`); //konversi string to integer number (bilangan bulat); 1
+        document.writeln(`<p>${parseFloat("1.9")}`); //konversi string to float number (bilangan pecahan); 1.9
+        document.writeln(`<p>${Number("1.9")}`); //konversi string to number (pecahan/bilangan bulat); 1.9
+
+        const a = 1;
+        const b = 1;
+        const total = a.toString() + b.toString(); //konversi number to string
+        document.writeln(`<p>${total}</p>`)
+
+    //NaN (Not a Number) untuk data string yang dikonversi ke number bukan data valid
+        //integer dan float masih akan mentoleransi kesalahan jika di awalan pada data terdapat number
+        document.writeln(`<p>${parseInt("salah")}</p>`); // NaN
+        document.writeln(`<p>${parseFloat("1.1salah")}</p>`); // 1.1
+
+        //number tidak akan mentoleransi kesalahan pada data
+        document.writeln(`<p>${Number("salah")}</p>`); //NaN
+        document.writeln(`<p>${Number("1salah")}</p>`); //NaN
+        document.writeln(`<p>${Number("1.1x")}</p>`); //NaN
+
+    //operasi NaN
+        const first = Number("salah"); // NaN
+        const totalNumber = first + 100;
+        document.writeln(`<p>${totalNumber}</p>`) //NaN
+
+    //function untuk mengecek data tersebut NaN atau bukan
+        document.writeln(`<p>${isNaN(first)}</p>`); // true
+        document.writeln(`<p>${isNaN(100)}</p>`); // false
+
+    </script>
+</body>
+</html>

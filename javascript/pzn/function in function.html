@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //membuat function di dalam function
+        //function yang ada di dalam/inner function hanya bisa di akses di dalam function outer dan tidak bisa di akses di luar function outer
+        function outer() {
+
+            function inner() {
+                console.info("hallo inner");
+            }
+
+            inner();
+
+        }
+
+        outer();
+        inner(); //error not defined
+
+    </script>
+</body>
+</html>

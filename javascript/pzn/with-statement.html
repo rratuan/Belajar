@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //dengan with akan mempersempit scope data untuk bisa mengakses property dalam sebuah data tanpa harus menyebutkan datanya
+    
+        //tanpa with statement
+        const person = {
+            firstName : "Ratuayu",
+            middleName : "Nurfajar",
+            lastName : "Kamaludin"
+        };
+
+        console.info(person.firstName);
+        console.info(person.middleName);
+        console.info(person.lastName);
+
+        //with statement
+        with(person) {
+        console.info(firstName);
+        console.info(middleName);
+        console.info(lastName);
+        }
+
+    </script>
+</body>
+</html>

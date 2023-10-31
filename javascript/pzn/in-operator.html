@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //mengecek apakah sebuah property ada di dala object atau tidak
+        const person = {
+            firstName: "Ratuayu",
+            lastName: "Nurfajar"
+        };
+    //jika ada maka hasilnya tru dan jika tidak hasilnya false
+        if ("firstName" in person) {
+            alert(`Hello ${person.firstName}`);
+        } else {
+            alert(`Gak ada`);
+        }
+
+        const student = {
+            firstName: "Budi",
+            middleName : undefined,
+            lastName : "Utomo"
+        }
+
+        if ("middleName" in student) {
+            alert(`Hello ${student.middleName}`);
+        } else {
+            alert("Gak ada")
+        }
+
+    //bisa digunakan juga untuk mengecek index di Array
+        const names = [null, "Ratu", null];
+        const result = 0 in names;
+        document.writeln(`<p>${result}</p>`)
+
+    </script>
+</body>
+</html>

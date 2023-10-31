@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let jumlahAngkot = 10;
+        let angkotBeroperasi = 6;
+        let angkotLembur = 8;
+
+        for(let angkot = 1; angkot<=jumlahAngkot; angkot++) {
+            if(angkot<=angkotBeroperasi) {
+                console.log(`Angkot No.${angkot} beroperasi dengen baik.`);
+            }else if (angkot === angkotLembur) {
+                console.log(`Angkot No.${angkot} sedang lembur`);
+            }else {
+                console.log(`Angkot No.${angkot} sedang tidak beroperasi.`)
+            }
+        }
+
+    </script>
+</body>
+</html>

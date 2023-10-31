@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    //membuat variable array
+        let arrayKosong = [];
+        let arrayNama = ["Ratuayu", "Nurfajar", 1, true];
+        console.table(arrayNama);
+
+    //menambah data ke dalam variable array
+        let name = []; //array kosong
+        name.push("Ardi");
+        name.push("Fajar", "Arifin");
+        name.push(2, false);
+        console.info(name);
+
+    //mendapatkan data di posisi index tertentu
+        console.info(arrayNama[1]);
+        console.info(arrayNama[3]);
+
+    //mengubah data di posisi index tertentu 
+        arrayNama[2] = "Kamaludin";
+        console.table(arrayNama);
+
+    //menghapus data di posisi index tertentu,namun index tidak bergeser/berubah
+        delete arrayNama[3];
+        console.table(arrayNama);
+
+    //menambahkan array ke dalam array 
+        arrayNama.push(1, 2, 3, 4, 5);
+        arrayNama.push(["budi", "andi", "jojo"]); //menambahkan array ke dalam array 
+        console.table(arrayNama)
+    </script>
+</body>
+</html>

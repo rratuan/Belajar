@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let orang = {}; //object kosong
+
+    //menambah atau mengubah property di object
+        orang["nama"] = "Ratuayu Nurfajar";
+        orang["alamat"] = "Indonesia";
+        orang["umur"] = 18;
+        console.table(orang);
+
+    // menghapus property
+        delete orang["umur"];
+        console.table(orang);
+
+    //membuat object dengan propertynya
+        let personalData = {
+            "nama lengkap" : "Ratuayu Nurfajar",
+            "alamat" : "Indonesia",
+            "umur" : 18,
+            "agama" : "islam"
+        };
+        console.table(personalData);
+
+    //mendapatkan info terkait data 
+        console.info(`Nama : ${personalData["nama lengkap"]}`);
+        console.info(`Alamat : ${personalData.alamat}`);
+        console.info(`Umur : ${personalData.umur}`);
+        
+    </script>
+</body>
+</html>

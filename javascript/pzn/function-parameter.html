@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //menambah/mengirim informasi ke function yang kita panggil dengan menambahkan parameter atau argument
+    //parameter ditempatkan di dalam kurung() di deklarasi method
+    //parameter bisa lebih dari satu
+    
+        //menambahkan /mengirim informasi langsung pada function menggunakan parameter
+        function sayGoodBye (name) {
+            document.writeln(`<p>Good Bye ${name}</p>`);
+        }
+
+        sayGoodBye("Ratu");
+
+        //menambahkan /mengirim informasi dari variable lain yg telah dibuat pada function menggunakan parameter
+        let firstName = "Ratuayu";
+        let lastName = "Nurfajar";
+
+        function sayHello() {
+            document.writeln(`<p>Hello ${firstName} ${lastName}</p>`);
+        }
+
+        sayHello(firstName, lastName);
+
+    </script>
+</body>
+</html>

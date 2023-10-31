@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //mengirim informasi banyak data ke parameter disimpan ke rest parameter dengan ...rest_parm
+        //rest parameter harus berada pada bagian akhir parameter
+        function sum(name, ...data) {
+            let total = 0;
+            for (const item of data) {
+                total += item;
+            }
+            document.writeln(`<p>Total ${name} is ${total}</p>`);
+        }
+
+        sum("orange", 10, 20, 30, 40, 50);
+
+        // konversi dari array menjadi rest parameter menggunakan spread syntax
+        const values = [10, 20, 30, 40];
+        sum("banana", ...values);
+
+    </script>
+</body>
+</html>
