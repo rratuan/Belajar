@@ -8,7 +8,6 @@ bodyHeight = bodyWeight / 100
 
 # perhitungan body mass index
 bmi = bodyWeight / bodyHeight**2
-print(bmi)
 
 # pengkategorian
 if bmi < 18.5:
