@@ -1,0 +1,5 @@
+latihan crud dengan python
+1.creat
+2.read
+3.update
+4.delete
