@@ -1,54 +1,134 @@
-# # kanan = "kanan".rjust(20) # rata kanan dengan 20 karakter
-# kanan = "kanan".rjust(20) # rata kanan dengan 20 karakter
-# print("'" + kanan + "'")
+# # # # kanan = "kanan".rjust(20) # rata kanan dengan 20 karakter
+# # # kanan = "kanan".rjust(20) # rata kanan dengan 20 karakter
+# # # print("'" + kanan + "'")
 
-# kiri = "kiri".ljust(20) # rata kiri dengan 20 karakter
-# print("'" + kiri + "'")
+# # # kiri = "kiri".ljust(20) # rata kiri dengan 20 karakter
+# # # print("'" + kiri + "'")
 
-# tengah ="tengah".center(20) # rata tengah dengan 20 karakter
-# print("'" + tengah + "'")
+# # # tengah ="tengah".center(20) # rata tengah dengan 20 karakter
+# # # print("'" + tengah + "'")
 
-# tengah ="tengah".center(20,'-') # rata tengah dengan 20 karakter
-# print("'" + tengah + "'")
+# # # tengah ="tengah".center(20,'-') # rata tengah dengan 20 karakter
+# # # print("'" + tengah + "'")
 
-# tes = range(1,12)
-# print(tes)
+# # # tes = range(1,12)
+# # # print(tes)
 
-# i = 6
-# while i <= 15:
-#     i = i + 4
-# print(i)
+# # # i = 6
+# # # while i <= 15:
+# # #     i = i + 4
+# # # print(i)
 
-# t = 0
-# for i in range(1,11):
-#     if (i % 3) == 3:
-#         t = t + 1
-# print(t)
+# # # t = 0
+# # # for i in range(1,11):
+# # #     if (i % 3) == 3:
+# # #         t = t + 1
+# # # print(t)
 
-# import random
+# # # import random
 
-# for i in range(1,3):
-#     print(random.randint(1,5), end=',')
+# # # for i in range(1,3):
+# # #     print(random.randint(1,5), end=',')
 
-# a= input('masukkan a')
-# b = input('masukkan b')
+# # # a= input('masukkan a')
+# # # b = input('masukkan b')
 
-# while b < 28:
-#     b + b - 2
-#     a + a + 3
-# print(b)
+# # # while b < 28:
+# # #     b + b - 2
+# # #     a + a + 3
+# # # print(b)
 
-harga = int(input('harga = '))
-qty = int(input('qty = '))
-status = input('status pelanggan = ')
+# # harga = int(input('harga = '))
+# # qty = int(input('qty = '))
+# # status = input('status pelanggan = ')
 
-diskon = 0
-if status == 'Y':
-    diskon = 0.15 * harga
-else:
-    diskon = 0.10 * harga
-subtotal = harga * qty
-total = subtotal - diskon
-print(total)
+# # diskon = 0
+# # if status == 'Y':
+# #     diskon = 0.15 * harga
+# # else:
+# #     diskon = 0.10 * harga
+# # subtotal = harga * qty
+# # total = subtotal - diskon
+# # print(total)
 
 
+# # print(1%5)
+# # print(10/5)
+
+# # t = 0
+# # for i in range(1,11):
+# #     if t%3 == 3:
+# #         t = t + 1
+# #     print(t)
+# # print(t)
+
+# # import random
+
+# # for i in range(1,3):
+# #     print(random.randint(1,5), end=' ')
+
+# # a = input('a = ')
+# # b = input('b = ')
+# # c = a + b * 2
+# # print(c)
+# # print(type(c))
+
+# # n = 5
+# # for j in range(n-1,0,-1):
+# #     print(j)
+
+# # n = 6
+# # for i in range(n-1):
+# #     print(i)
+
+# # nama_lengkap = "John Michael Doe"
+
+# # # Memisahkan nama lengkap menjadi bagian-bagian dengan spasi sebagai pemisah
+# # bagian_nama = nama_lengkap.split()
+
+# # # Mengambil kata terakhir (nama belakang)
+# # nama_belakang = bagian_nama[-1]
+
+# # print("Nama Belakang:", nama_belakang)
+
+# # listNama = ["Asep supriatna","Budi Dharma","Cecep Permana","Dede Adi Agung"]
+# # n = len(listNama)
+# # listNama = [nama.upper() for nama in listNama]
+# # print(listNama)
+
+# listFilm = ['An American Crime','The Shawshark Redeption','A Beautifull Mind']
+# n = len(listFilm)
+
+
+# # for i in range(n):
+# #     listFilm[i].lower()
+# #     print(film)
+
+# # if listFilm[0].split()[0].lower() in ['the','a','an']:
+# #     listFilm[0] = listFilm[0].split()[1:]
+
+# # print(listFilm[0])
+
+# # print(''.join(listFilm[0].split()[1:]))
+# # print("Swallow".split())
+# listFilm = ["An American Crime", "The Shawshank Redemption", "A Beautiful Mind", "Swallow", "The Crown", "American Beauty", "Pacific Rim"]
+# print("List Film sebelum diurutkan:")
+# print(listFilm)
+
+# def sortingFilm(listFilm):
+#     n = len(listFilm)
+#     for i in range(n):
+#         idx_min = i
+#         for j in range(i+1, n):
+#             filmSatu = ' '.join(listFilm[j].split()[1:]) if listFilm[j].split()[0].lower() in ['the', 'a', 'an'] else listFilm[j]
+#             filmDua = ' '.join(listFilm[idx_min].split()[1:]) if listFilm[idx_min].split()[0].lower() in ['the', 'a', 'an'] else listFilm[idx_min]
+
+#             if filmSatu.lower() < filmDua.lower():
+#                 idx_min = j
+#         listFilm[i], listFilm[idx_min] = listFilm[idx_min], listFilm[i]
+
+# # Memanggil fungsi untuk mengurutkan listFilm
+# sortingFilm(listFilm)
+
+# print("\nList Film setelah diurutkan:")
+# print(listFilm)

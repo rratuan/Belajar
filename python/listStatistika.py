@@ -25,6 +25,7 @@ for i in data_list:
         print(i)
 
 # mencari nilai tengah
+
 data_tengah = sorted(data_list)
 print(data_tengah)
 lenght = 0
@@ -33,5 +34,8 @@ for i in data_list:
 if lenght % 2 == 1:
     print(data_tengah[int(lenght/2 + 0.5 - 1)])
 else:
-    data_tengah = (data_tengah[int(lenght/2 - 1)] + data_tengah[int(lenght/2)])/2
+    data_tengah = (data_tengah[int(lenght/2 - 1)] + data_tengah[int(lenght/2)]) / 2
     print(data_tengah)
+
+# mencari modus
+    
