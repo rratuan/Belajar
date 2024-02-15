@@ -66,13 +66,31 @@ def minimum(data,x):
             mn = data[i][x]
     return mn
 
+# function modus
+def modus(data,x):
+    maxCount = 0
+    maxValue = 0
+    for i in range(length):
+        count = 0
+        for j in range(length):
+            if data[i][x] == data[j][x]:
+                count += 1
+        if count > maxCount:
+            maxCount = count
+            maxValue = data[i][x]
+    if maxCount == 1:
+        return 0
+    else:
+        return maxValue
+
 # table data mahasiswa berdasarkan statistik
 data_statistik = [
     ["Banyak Data",length,length,length,length],
     ["Rata Rata",average(data_mahasiswa,1),average(data_mahasiswa,2),average(data_mahasiswa,3),average(data_mahasiswa,4)],
     ["Median",median(data_mahasiswa,1),median(data_mahasiswa,2),median(data_mahasiswa,3),median(data_mahasiswa,4)],
     ["Nilai Max",maximum(data_mahasiswa,1),maximum(data_mahasiswa,2),maximum(data_mahasiswa,3),maximum(data_mahasiswa,4)],
-    ["Nilai Min",minimum(data_mahasiswa,1),minimum(data_mahasiswa,2),minimum(data_mahasiswa,3),minimum(data_mahasiswa,4)]
+    ["Nilai Min",minimum(data_mahasiswa,1),minimum(data_mahasiswa,2),minimum(data_mahasiswa,3),minimum(data_mahasiswa,4)],
+    ["Modus",modus(data_mahasiswa,1),modus(data_mahasiswa,2),modus(data_mahasiswa,3),modus(data_mahasiswa,4)]
 ]
 
 length2 = len(data_statistik)

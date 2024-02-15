@@ -134,18 +134,18 @@
 # print(listFilm)
 
 # tabel data mahasiswa
-# data_mahasiswa = [
-#     ['Ardi',86,78,80,91],
-#     ['Fajar',75,78,81,68],
-#     ['Ratu',96,97,90,91],
-#     ['Jarot',64,71,80,88],
-#     ['Ucup',91,80,83,78],
-#     ['Komeng',55,70,68,78],
-#     ['Kardun',80,88,67,82],
-#     ['Neneng',70,80,89,92]
-# ]
+data_mahasiswa = [
+    ['Ardi',86,78,80,91],
+    ['Fajar',75,78,81,68],
+    ['Ratu',96,97,90,91],
+    ['Jarot',64,71,80,88],
+    ['Ucup',91,80,83,78],
+    ['Komeng',55,70,68,91],
+    ['Kardun',80,88,67,82],
+    ['Neneng',70,80,89,92]
+]
 
-# length = len(data_mahasiswa)
+length = len(data_mahasiswa)
 
 # # function sorting
 # def sortingData(data,x):
@@ -178,3 +178,22 @@
 #     return median
 
 # print(median(data_mahasiswa,4))
+
+# function modus
+# def modus(data,x):
+#     maxCount = 0
+#     maxVal = 0
+#     for i in range(length):
+#         count = 0
+#         for j in range(length):
+#             if data[i][x] == data[j][x]:
+#                 count += 1
+#         if count > maxCount:
+#             maxCount = count
+#             maxVal = data[i][x]
+#     if maxCount == 1:
+#         return 0
+#     else:
+#         return maxVal
+
+# print(modus(data_mahasiswa,1))
