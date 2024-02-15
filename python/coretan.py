@@ -132,3 +132,49 @@
 
 # print("\nList Film setelah diurutkan:")
 # print(listFilm)
+
+# tabel data mahasiswa
+# data_mahasiswa = [
+#     ['Ardi',86,78,80,91],
+#     ['Fajar',75,78,81,68],
+#     ['Ratu',96,97,90,91],
+#     ['Jarot',64,71,80,88],
+#     ['Ucup',91,80,83,78],
+#     ['Komeng',55,70,68,78],
+#     ['Kardun',80,88,67,82],
+#     ['Neneng',70,80,89,92]
+# ]
+
+# length = len(data_mahasiswa)
+
+# # function sorting
+# def sortingData(data,x):
+#     for i in range(length):
+#         idx = i
+#         for j in range(i+1,length):
+#             if data[j][x] > data[idx][x]:
+#                 idx = j
+#         data[i],data[idx] = data[idx],data[i]
+
+# # function total jumlah
+# def sumData(data,x):
+#     total = 0
+#     for i in range(length):
+#         total = total + data[i][x]
+#     return total
+
+# # function rata rata 
+# def average(data,x):
+#     average = sumData(data,x)/length
+#     return average
+
+# # function median
+# def median(data,x):
+#     sortingData(data,x)
+#     if length % 2 == 1:
+#         median = data[int(length/2 + 0.5)][x]
+#     else:
+#         median = (data[int(length/2 - 1)][x] + data[int(length/2)][x]) / 2
+#     return median
+
+# print(median(data_mahasiswa,4))

@@ -1,7 +1,7 @@
 data = [1,5,4,2,8]
 n = len(data)
 
-# bb sort accending versi pak atu ngecek kiri ke kanan
+# bb sort accending versi atu ngecek kiri ke kanan
 def bubbleSortAccending(data):
     for i in range(n):
         for j in range(i+1,n-1):
@@ -34,7 +34,7 @@ def selectionSortAccending(data):
         for j in range(i+1,n):
             if data[j] < data[idx_min]:
                 idx_min = j
-                data[i],data[idx_min] = data[idx_min],data[i]
+        data[i],data[idx_min] = data[idx_min],data[i]
 
 # selectionSortAccending(data)
 # print(data)
