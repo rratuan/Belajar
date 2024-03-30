@@ -1,0 +1,8 @@
+Class = tipe data --> int,float,string,dll
+Object = bil1,bil2,bil3,nama,kelas,dll
+
+Sebuah class memiliki PROPERTY dan METHOD
+Property : sesuatu yang dimiliki oleh suatu class
+            Manusia = {nama,tinggi,berat,dll}
+Method : sesuatu yang bisa dilakukan oleh suatu class
+            Manusia = {jalan,lari,lompat,dll}
