@@ -1,3 +1,5 @@
+# variabel protected dan variabel private
+
 class Hero:
     # varibel class
     jumlah = 0
