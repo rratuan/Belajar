@@ -1,9 +1,9 @@
 from flask import Flask, request
-from controller import MahasiswaController
+from app.controller import MahasiswaController
 
-app = Flask("Aplikasi Awal")
+app = Flask("Aplikasi Mahasiswa Bodong")
 
-@app.route("/coba", methods=["GET","POST"])
+@app.route("/latihan", methods=["GET","POST"])
 
 def mahasiswa():
     controller = MahasiswaController()
@@ -12,7 +12,7 @@ def mahasiswa():
         controller.set_nama(request.form["nama"])
         controller.set_nim(request.form["nim"])
 
-    return controller.update_view()
+    return controller.updateView()
 
 if __name__ == "__main__":
     app.run()

@@ -1,9 +1,10 @@
-from flask import Flask, request
+from model import ModelMahasiswa
+from view import Display
 
 class MahasiswaController:
-    def __init__(self, model, view):
-        self.model = model
-        self.view = view
+    def __init__(self):
+        self.model = ModelMahasiswa('ratu',10123215)
+        self.view = Display()
     def set_nama(self,nama):
         self.model.nama = nama
     def set_nim(self,nim):
