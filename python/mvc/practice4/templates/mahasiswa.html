@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/mahasiswa" method="post">
+        <label for="nama">Nama : </label><br>
+        <input type="text" id="nama" name="nama"><br>
+        <label for="nim">NIM : </label><br>
+        <input type="text" id="nim" name="nim"><br><br>
+        <label for="prodi">Program Studi : </label><br>
+        <input type="text" id="prodi" name="prodi"><br><br>
+        <input type="submit" value="submit">
+        <button><a href="/mahasiswa/dosen">Menu Dosen</a></button>
+    </form>
+
+    <p>Nama          : {{mahasiswa.nama}}</p>
+    <p>NIM           : {{mahasiswa.nim}}</p>
+    <p>Program Studi : {{mahasiswa.prodi}}</p>
+
+</body>
+</html>
